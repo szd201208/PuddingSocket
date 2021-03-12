@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启动socket服务器" />
+
+        <ImageView
+            android:id="@+id/test_server"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/server_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start_client1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接socket服务器" />
+
+        <Button
+            android:id="@+id/btn_send1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送消息" />
+
+        <Button
+            android:id="@+id/btn_send_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送图片" />
+
+        <EditText
+            android:id="@+id/et_client1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="请输入内容" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/client_recyclerview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start_client2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接socket服务器" />
+
+        <Button
+            android:id="@+id/btn_send2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送消息" />
+
+        <EditText
+            android:id="@+id/et_client2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="请输入内容" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/client_recyclerview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="以上是服务端，以下是客户端"
+        android:textSize="16sp" />
+</LinearLayout>
